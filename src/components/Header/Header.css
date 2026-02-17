@@ -1,0 +1,70 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url('/header_img.png') no-repeat center;
+  background-size: cover; /* use cover instead of contain for full width */
+  border-radius: 10px;    /* optional: rounded corners like screenshot */
+  position: relative;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;        /* wider space for text */
+  bottom: 10%;
+  left: 6vw;
+  color: black;  
+  animation: fadeIn 3s;        /* ensure text is visible */
+}
+
+.header-contents h2 {
+  font-size: max(4vw,22px);
+  font-weight: bold;
+  color: white;
+}
+
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+  line-height: 1.5;
+}
+
+.header-contents button {
+  padding: 1vw 2.3vw;
+  background: #747474;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: white;
+  font-size: max(1vw , 13px);
+}
+
+
+@media (max-width:1050) {
+
+
+  .header-contents{
+    max-width: 45%;
+  }
+  
+}
+
+
+@media (max-width:750) {
+
+  .header-contents{
+    max-width: 65%;
+  }
+
+  .header-contents p{
+    display: none;
+  }
+  .header-contents button{
+    padding: 2vw 4vw;
+  }
+  
+}

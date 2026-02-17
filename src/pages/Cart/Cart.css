@@ -1,0 +1,116 @@
+.cart{
+  margin-top: 10%;
+}
+
+.cart-items-title{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  color: rgb(20, 16, 16);
+  font-size: max(1vw,12px);
+  align-items: center;
+}
+
+.ccart-items-title cart-item-item{
+     margin: 10px 0px;
+     color: black;
+}
+
+.cart-item-item img{
+  width: 50px;
+
+}
+
+.cart hr{
+  height: 1px;
+  border: none;
+  background-color: #e1e1e1;
+}
+
+.cart-item-item .cross{
+  cursor: pointer;
+  color: red;
+}
+.cart-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: max(10vw,20px) ;/* ensures it doesn't get too big */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 200px;
+  flex: 1;
+}
+
+.cart-total-detail {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.cart-total-detail hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc; /* consistent line */
+}
+
+.cart-total button {
+  border: none;
+  color: white;
+  background-color: tomato;
+  width: clamp(200px, 15vw, 300px); /* responsive but bounded */
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-total button:hover {
+  background-color: #e04e2b; /* slightly darker on hover */
+}
+
+.cart-promo-code{
+  flex: 1;
+}
+.cart-promo-code p{
+  color: #555;
+}
+
+.cart-promo-code-input{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aeaeae;
+  border-radius: 4px;
+}
+
+.cart-promo-code-input input{
+  background: transparent;
+  border: none;
+  padding-left:10px;
+  outline: none; 
+}
+
+.cart-promo-code-input button{
+  width: max(10vw,150px);
+  padding: 12px 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+@media (max-width: 750px) {
+  .cart-bottom{
+    flex-direction: column-reverse;
+  }
+  .cart-promo-code{
+    justify-content: start;
+  }
+}
