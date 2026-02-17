@@ -1,4 +1,8 @@
-# React + Vite
+# Food Delivery React Application
+
+A modern food delivery application built with React + Vite.
+
+## Tech Stack
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
